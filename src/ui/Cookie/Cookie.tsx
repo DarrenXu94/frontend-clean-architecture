@@ -1,8 +1,9 @@
+import { useSnapshot } from "valtio";
+import { useAddToCart } from "../../application/addToCart";
 import { contains } from "../../domain/cart";
 import { Product } from "../../domain/product";
-import { useAddToCart } from "../../application/addToCart";
-
-import { useStore } from "../../services/store";
+import { state } from "../../services/store";
+// import { useStore } from "../../services/store";
 import styles from "./Cookie.module.css";
 import { Toppings } from "./Toppings";
 
@@ -11,7 +12,9 @@ type CookieProps = {
 };
 
 export function Cookie({ cookie }: CookieProps) {
-  const { user, cart } = useStore();
+  // const { user, cart } = useStore();
+  const { user, cart } = useSnapshot(state);
+
   const { addToCart } = useAddToCart();
 
   return (
