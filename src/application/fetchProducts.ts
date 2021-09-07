@@ -2,10 +2,10 @@ import { useProducts } from "../services/productAdapter";
 import { FetchDataService } from "./ports";
 
 export function useFetchProducts() {
-  const data: FetchDataService = useProducts();
+  const products: FetchDataService = useProducts();
 
-  async function fetchProducts() {
-    return data.fetchProducts();
+  function fetchProducts() {
+    return products.FetchProducts();
   }
 
   return { fetchProducts };

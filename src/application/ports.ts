@@ -1,3 +1,4 @@
+import { UseQueryResult } from "react-query";
 import { Cart } from "../domain/cart";
 import { Order } from "../domain/order";
 import { Product } from "../domain/product";
@@ -32,5 +33,5 @@ export interface PaymentService {
 }
 
 export interface FetchDataService {
-  fetchProducts(): Promise<Product[]>;
+  FetchProducts(): UseQueryResult<Product[], Error>;
 }
