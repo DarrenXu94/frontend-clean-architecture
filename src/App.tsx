@@ -5,8 +5,10 @@ import { User } from "./ui/User";
 import { Front } from "./ui/Front";
 
 import { Header } from "./ui/Header";
+import { useInit } from "./ui/Init";
 
 function App() {
+  useInit();
   return (
     <Router>
       <div className="app">

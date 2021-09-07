@@ -1,7 +1,6 @@
 import { Cart } from "../../domain/cart";
 import { Order } from "../../domain/order";
 import { Product } from "../../domain/product";
-import { cookies } from "../fakeData";
 import { state } from "../store";
 
 type StateType = {
@@ -12,8 +11,12 @@ type StateType = {
 
 const OrderState: StateType = {
   cart: { products: [] },
-  cookies,
+  cookies: [],
   orders: [],
+};
+
+export const updateProducts = (cookies: Product[]) => {
+  state.cookies = cookies;
 };
 
 export const updateCart = (cart: Cart) => {

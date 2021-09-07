@@ -1,5 +1,6 @@
 import { Cart } from "../domain/cart";
 import { Order } from "../domain/order";
+import { Product } from "../domain/product";
 import { User, UserName } from "../domain/user";
 
 export interface UserStorageService {
@@ -28,4 +29,8 @@ export interface NotificationService {
 
 export interface PaymentService {
   tryPay(amount: PriceCents): Promise<boolean>;
+}
+
+export interface FetchDataService {
+  fetchProducts(): Promise<Product[]>;
 }
