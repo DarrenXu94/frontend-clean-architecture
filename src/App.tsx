@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { Auth } from "./ui/Auth";
 import { Front } from "./ui/Front";
-import { Header } from "./ui/common/Header";
+import { Header } from "./ui/_common/Header";
 import { useInit } from "./ui/Init";
 import { User } from "./ui/User";
 

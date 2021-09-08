@@ -1,7 +1,7 @@
 import { useSnapshot } from "valtio";
 import { Product } from "../../domain/product";
 import { state } from "../../services/store";
-import { Cookie } from "../common/Cookie";
+import { Cookie } from "../_common/Cookie";
 import styles from "./Front.module.css";
 
 export function Front() {
