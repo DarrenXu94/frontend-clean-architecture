@@ -1,11 +1,9 @@
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { Auth } from "./ui/Auth";
-import { User } from "./ui/User";
 import { Front } from "./ui/Front";
-
 import { Header } from "./ui/Header";
 import { useInit } from "./ui/Init";
+import { User } from "./ui/User";
 
 function App() {
   useInit();

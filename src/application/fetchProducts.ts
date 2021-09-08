@@ -5,7 +5,7 @@ export function useFetchProducts() {
   const products: FetchDataService = useProducts();
 
   function fetchProducts() {
-    return products.FetchProducts();
+    return products.fetchProducts();
   }
 
   return { fetchProducts };

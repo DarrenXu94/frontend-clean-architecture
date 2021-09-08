@@ -4,12 +4,15 @@ import { Product } from "../domain/product";
 import { fakeApi } from "./api";
 import { cookies } from "./fakeData";
 
+export const fetchCookies = () => {
+  return fakeApi(cookies);
+};
+
 export function useProducts(): FetchDataService {
+  const { data } = useQuery<Product[], Error>("fetchProducts", fetchCookies);
   return {
-    FetchProducts: () => {
-      return useQuery<Product[], Error>(["fetchProducts"], () =>
-        fakeApi(cookies)
-      );
+    fetchProducts: () => {
+      return data || [];
     },
   };
 }

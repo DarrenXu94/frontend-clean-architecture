@@ -33,5 +33,5 @@ export interface PaymentService {
 }
 
 export interface FetchDataService {
-  FetchProducts(): UseQueryResult<Product[], Error>;
+  fetchProducts(): Product[];
 }
