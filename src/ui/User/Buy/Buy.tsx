@@ -1,7 +1,10 @@
 import React, { useState } from "react";
-import { useOrderProducts } from "../../application/orderProducts";
-import { UserName } from "../../domain/user";
-import { useCartStorage, useUserStorage } from "../../services/storageAdapter";
+import { useOrderProducts } from "../../../application/orderProducts";
+import { UserName } from "../../../domain/user";
+import {
+  useCartStorage,
+  useUserStorage,
+} from "../../../services/storageAdapter";
 import styles from "./Buy.module.css";
 
 export function Buy() {

@@ -1,8 +1,8 @@
 import { useSnapshot } from "valtio";
-import { useAddToCart } from "../../application/addToCart";
-import { contains } from "../../domain/cart";
-import { Product } from "../../domain/product";
-import { state } from "../../services/store";
+import { useAddToCart } from "../../../application/addToCart";
+import { contains } from "../../../domain/cart";
+import { Product } from "../../../domain/product";
+import { state } from "../../../services/store";
 // import { useStore } from "../../services/store";
 import styles from "./Cookie.module.css";
 import { Toppings } from "./Toppings";

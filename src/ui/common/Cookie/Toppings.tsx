@@ -1,6 +1,6 @@
-import { Product, ingredients } from "../../domain/product";
-import { hasAllergy, hasPreference } from "../../domain/user";
-import { useUserStorage } from "../../services/storageAdapter";
+import { Product, ingredients } from "../../../domain/product";
+import { hasAllergy, hasPreference } from "../../../domain/user";
+import { useUserStorage } from "../../../services/storageAdapter";
 
 type ToppingsProps = {
   cookie: Product;
